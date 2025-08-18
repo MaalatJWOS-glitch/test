@@ -1,0 +1,284 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding/border don't affect width/height */
+}
+
+/* ========== GLOBAL STYLES ========== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+/* ========== HEADER ========== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0);
+    padding: 10px 30px;
+    z-index: 10;
+    background: #3d0e08;
+}
+
+.header-text h3 {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.fa-mug-hot {
+    color: #f8972f;
+}
+
+/* ========== NAVIGATION BUTTONS ========== */
+.buttons-header {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons-header .button-list {
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: none;
+    color:white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease, transform 0.2s ease;
+}
+
+.buttons-header .button-list:hover {
+    background: #fc9928;
+    color: black;
+    transform: scale(1.05);
+}
+
+.buttons-header .fa-times {
+    color: black;
+    font-size: 20px;
+}
+
+.header .fa-bars,
+.buttons-header .fa-times {
+    display: none;
+}
+
+/* ========== MAIN CONTENT ========== */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    padding: 20px;
+    height: 100vh;
+    background-color: #3d0e08;
+}
+
+.main-text h3 {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 25px;
+    color: #e28a24;
+}
+
+.main-text .subtitle {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: white;
+}
+
+.main-text .description {
+    font-weight: 300;
+    margin-top: 15px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: white;
+    max-width: 450px; /* Keeps paragraph readable */
+}
+
+/* ========== BUTTON SECTION ========== */
+.btn-section {
+    display: flex;
+    padding: 30px 0;
+    gap: 23px;
+}
+
+.orderbtn, .contactbtn {
+    padding: 10px 26px;
+    text-decoration: none;
+    font-weight: 400;
+    border: 2px solid transparent;
+    background-color: #e28a24;
+    border-radius: 30px;
+    color: #881d0f;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button hover effect */
+.orderbtn:hover, .contactbtn {
+    color: white;
+    border-color: white;
+    background: transparent;
+}
+
+.contactbtn:hover {
+    color: #881d0f;
+    border-color: #e28a24;
+    background: #e28a24;
+}
+
+/* ========== IMAGE STYLING ========== */
+.main-content .main-content-img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ========== END OF MAIN-CONTENT ========== */
+
+/* ========== START OF ABOUT-US-CONTENT ========== */
+.about-us-section {
+    background: white;
+    height: 95vh;
+    padding: 200px 0;
+}
+
+.about-us-section .about-us-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-image-wrapper .coffee-post {
+    max-width: 600px;
+    border-radius: 30px;
+    height: auto;
+}
+
+.about-us-title {
+    text-align: center;
+    transition: left 0.2s ease;
+}
+
+.about-us-title:hover{
+    text-decoration: underline #e28a24;
+}
+
+.about-us-section .about-us-section-content .about-details {
+    color: #000000;
+}
+
+/* ========== RESPONSIVE (Mobile/Tablet) ========== */
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 20px 20px;
+        gap: 50px;
+    }
+
+    .main-content .main-content-img {
+        max-width: 400px;
+    }
+
+    .main-content .main-text :is(.subtitle, .description) {
+        max-width: 100%;
+    }
+
+    .main-content .main-text .btn-section {
+        justify-content: center;
+    }
+
+    .buttons-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100%;
+        background: #fffffff8;
+        gap: 60px;
+        padding: 60px 20px; /* T,R,B,L*/
+        z-index: 20;
+        transition: left 0.2s ease;
+    }
+
+    body.show-mobile-menu .buttons-header {
+        left: 0;
+    }
+
+    body.show-mobile-menu .header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0 0 0 0 0.2);
+    }
+
+    .buttons-header .button-list {
+        color: #e28a24;
+    }
+
+    .buttons-header .fa-times {
+        display: block;
+        font-size: 24px;
+        align-self: flex-end;
+        margin-bottom: 20px;
+        background: none;
+        border: none;
+        color: #e28a24;
+    }
+
+    .header .fa-bars {
+        display: block;
+        color: #e28a24;
+        background: none;
+        border: none;
+        font-size: 25px;
+    }
+
+    /* ========== END OF MAIN-CONTENT ========== */
+}
+
+/* ========== iPad Pro Responsive ========== */
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 30px 30px;
+        gap: 60px;
+    }
+        
+    .main-content .main-content-img {
+        max-width: 100%;
+    }
+
+    .main-content .main-text :is(.subtitle, .description) {
+        max-width: 100%;
+    }
+
+    .main-content .main-text .btn-section {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}
