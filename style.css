@@ -178,10 +178,11 @@ body {
 
 .about-us-section-content {
     display: flex;
-    justify-content: center; /* centers content */
+    justify-content: center;
     align-items: center;
-    gap: 60px;               /* space between image & text */
-    flex-wrap: wrap;         /* stacks on small screens */
+    padding: 12% 0 0 0;
+    gap: 100px;
+    flex-wrap: wrap;
     max-width: 1200px;
     width: 100%;
 }
@@ -191,7 +192,7 @@ body {
     height: 350px;
     object-fit: cover;
     border-radius: 30px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* add depth */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -285,6 +286,68 @@ body {
     }
 
     /* ========== END OF MAIN-CONTENT ========== */
+
+    /* ========== START OF ABOUT-US-CONTENT ========== */
+    .about-us-section {
+        background: rgb(255, 244, 253);
+        min-height: 100vh;
+        padding: 80px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: #000;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .about-us-title:after {
+        content: "";
+        width: 80px;
+        height: 5px;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 10px;
+        background: #e28a24;
+    }
+
+    .about-us-section-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12% 0 0 0;
+        gap: 100px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .about-image-wrapper .coffee-post {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 30px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .about-image-wrapper .coffee-post:hover {
+        transform: scale(1.05);
+    }
+
+    .about-details {
+        flex: 1;
+        color: #000;
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 600px;
+    }
 }
 
 /* ========== iPad Pro Responsive ========== */
