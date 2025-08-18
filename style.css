@@ -238,8 +238,8 @@ body {
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        left: -300px;
-        width: 300px;
+        left: -250px;
+        width: 250px;
         height: 100%;
         background: #fffffff8;
         gap: 60px;
