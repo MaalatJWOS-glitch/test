@@ -148,32 +148,44 @@ body {
 
 /* ========== START OF ABOUT-US-CONTENT ========== */
 .about-us-section {
-    background: rgb(255, 244, 253);
+    background: rgb(250, 230, 246);
     min-height: 100vh;
     padding: 80px 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .about-us-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    color: #000;
-    font-weight: bold;
-    position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
 }
 
-.about-us-title:after {
-    content: "";
-    width: 80px;
-    height: 5px;
-    display: block;
-    margin: 10px auto 0;
-    border-radius: 10px;
-    background: #e28a24;
+/* Underline */
+.about-us-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #e28a24;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.about-us-title:hover::after {
+  transform: scaleX(1);
 }
 
 .about-us-description {
@@ -339,6 +351,7 @@ body {
     /* ========== START OF ABOUT-US-CONTENT ========== */
     .about-us-section {
         flex-direction: column;
+        min-height: 90vh;
         gap: 2rem;
         padding: 5% 0;
     }
@@ -353,6 +366,7 @@ body {
         max-width: 100%;
         padding: 0 20px;
     }
+    
 }
 
 /* ========== iPad Pro Responsive ========== */
@@ -366,6 +380,7 @@ body {
     }
         
     .main-content .main-content-img {
+        width: 80%;
         max-width: 100%;
     }
 
@@ -379,4 +394,21 @@ body {
         gap: 20px;
     }
 
+    /* ========== END OF MAIN-CONTENT ========== */
+
+    /* ========== START OF ABOUT-US-CONTENT ========== */
+    .about-us-section {
+        flex-direction: column-reverse; /* reverses the stacking order */
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us-section-content {
+        gap: 2rem; /* reduce space between image and text */
+    }
+
+    .about-image-wrapper .coffee-post {
+        max-width: 80%;
+        height: auto;
+    }
 }
