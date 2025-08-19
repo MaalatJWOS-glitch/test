@@ -352,12 +352,12 @@ body {
     .about-us-section {
         flex-direction: column;
         min-height: 90vh;
-        gap: 2rem;
+        gap: 50rem;
         padding: 5% 0;
     }
 
     .about-image-wrapper .coffee-post {
-        width: 350px;
+        width: 400px;
         max-width: 100%;
         border-radius: 20px;
     }
@@ -365,6 +365,10 @@ body {
     .about-details {
         max-width: 100%;
         padding: 0 20px;
+    }
+
+    .about-us-description {
+        font-size: 1rem;
     }
     
 }
