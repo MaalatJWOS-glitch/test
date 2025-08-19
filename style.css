@@ -367,6 +367,13 @@ body {
         background: #e28a24;
     }
 
+    .about-us-description {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #000;
+        margin-bottom: 40px;
+    }
+
     .about-us-section-content {
         display: flex;
         justify-content: center;
