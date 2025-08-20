@@ -404,7 +404,7 @@ body {
         flex-direction: column-reverse; /* reverses the stacking order */
         align-items: center;
         text-align: center;
-        padding: 30% 0;
+        padding: 15% 0;
     }
 
     .about-us-section-content {
