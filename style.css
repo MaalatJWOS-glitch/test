@@ -271,7 +271,7 @@ body {
 
 
 /* ========== RESPONSIVE (Mobile/Tablet) ========== */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .main-content {
         flex-direction: column-reverse;
         justify-content: center;
@@ -369,57 +369,6 @@ body {
 
     .about-us-description {
         font-size: 1rem;
-    }
-}
-
-/* ========== iPad Pro Responsive ========== */
-@media (max-width: 1200px) {
-    .main-content {
-        flex-direction: column-reverse;
-        justify-content: center;
-        text-align: center;
-        padding: 10px 30px 30px;
-        gap: 60px;
-    }
-        
-    .main-content .main-content-img {
-        width: 80%;
-        max-width: 100%;
-    }
-
-    .main-content .main-text :is(.subtitle, .description) {
-        max-width: 100%;
-    }
-
-    .main-content .main-text .btn-section {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    /* ========== END OF MAIN-CONTENT ========== */
-
-    /* ========== START OF ABOUT-US-CONTENT ========== */
-    .about-us-section {
-        flex-direction: column-reverse; /* reverses the stacking order */
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-us-section-content {
-        gap: 2rem; /* reduce space between image and text */
-    }
-
-    .about-image-wrapper .coffee-post {
-        position: relative;
-        top: -150px;
-        max-width: 80%;
-        height: auto;
-    }
-
-    .about-details {
-        position: relative;
-        top: -150px;
     }
 }
 
