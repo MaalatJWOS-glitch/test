@@ -370,6 +370,18 @@ body {
     .about-us-description {
         font-size: 1rem;
     }
+
+    .fa-facebook {
+        background-color: #1877F2;
+    }
+
+    .fa-instagram {
+        background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+    }
+
+    .fa-x-twitter {
+        background-color: #000;
+    }
     
 }
 
