@@ -271,7 +271,7 @@ body {
 
 
 /* ========== RESPONSIVE (Mobile/Tablet) ========== */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .main-content {
         flex-direction: column-reverse;
         justify-content: center;
@@ -373,7 +373,7 @@ body {
 }
 
 /* ========== iPad Pro Responsive ========== */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .main-content {
         flex-direction: column-reverse;
         justify-content: center;
@@ -412,31 +412,22 @@ body {
 
     .about-image-wrapper .coffee-post {
         position: relative;
-        top: -200px;
+        top: -150px;
         max-width: 80%;
         height: auto;
     }
 
     .about-details {
         position: relative;
-        top: -200px;
+        top: -150px;
     }
 }
 
-@media (hover: hover) and (pointer: fine) {
-    .fa-facebook:hover {
-        background-color: #1877F2;
-        color: #fff;
-    }
-
-    .fa-instagram:hover {
-        background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-        color: #fff;
-    }
-
-    .fa-x-twitter:hover {
-        background-color: #000;
-        color: #fff;
-    }
+@media (hover: none) and (pointer: coarse) {
+  .fa-facebook,
+  .fa-instagram,
+  .fa-x-twitter {
+    background-color: transparent; 
+    color: inherit;
+  }
 }
-    
