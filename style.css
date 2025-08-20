@@ -266,8 +266,12 @@ body {
     border: transparent;
 }
 
+
+
+
+
 /* ========== RESPONSIVE (Mobile/Tablet) ========== */
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
     .main-content {
         flex-direction: column-reverse;
         justify-content: center;
@@ -347,24 +351,68 @@ body {
     /* ========== START OF ABOUT-US-CONTENT ========== */
     .about-us-section {
         flex-direction: column;
-        min-height: 100vh; /* let content decide */
-        gap: 2rem; /* smaller, realistic spacing */
+        min-height: 100vh;
+        gap: 50rem;
         padding: 5% 0;
     }
 
     .about-image-wrapper .coffee-post {
-        width: 100%; /* take full width */
-        max-width: 350px;
+        width: 400px;
+        max-width: 100%;
         border-radius: 20px;
     }
 
     .about-details {
         max-width: 100%;
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     .about-us-description {
-        font-size: 0.95rem;
+        font-size: 1rem;
+    }
+}
+
+/* ========== iPad Pro Responsive ========== */
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 30px 30px;
+        gap: 60px;
+    }
+        
+    .main-content .main-content-img {
+        width: 80%;
+        max-width: 100%;
+    }
+
+    .main-content .main-text :is(.subtitle, .description) {
+        max-width: 100%;
+    }
+
+    .main-content .main-text .btn-section {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* ========== END OF MAIN-CONTENT ========== */
+
+    /* ========== START OF ABOUT-US-CONTENT ========== */
+    .about-us-section {
+        flex-direction: column-reverse; /* reverses the stacking order */
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us-section-content {
+        gap: 2rem; /* reduce space between image and text */
+    }
+
+    .about-image-wrapper .coffee-post {
+        max-width: 80%;
+        height: auto;
     }
 }
 
