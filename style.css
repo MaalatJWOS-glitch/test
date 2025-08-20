@@ -266,10 +266,6 @@ body {
     border: transparent;
 }
 
-
-
-
-
 /* ========== RESPONSIVE (Mobile/Tablet) ========== */
 @media (max-width: 1200px) {
     .main-content {
@@ -351,24 +347,24 @@ body {
     /* ========== START OF ABOUT-US-CONTENT ========== */
     .about-us-section {
         flex-direction: column;
-        min-height: 100vh;
-        gap: 50rem;
+        min-height: 100vh; /* let content decide */
+        gap: 2rem; /* smaller, realistic spacing */
         padding: 5% 0;
     }
 
     .about-image-wrapper .coffee-post {
-        width: 400px;
-        max-width: 100%;
+        width: 100%; /* take full width */
+        max-width: 350px;
         border-radius: 20px;
     }
 
     .about-details {
         max-width: 100%;
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
     .about-us-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 }
 
