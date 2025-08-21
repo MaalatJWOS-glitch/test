@@ -284,26 +284,26 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
 }
 
 .menu-item {
-    background: #2c2c2c;
     border-radius: 20px;
-    padding: 20px;
-    width: 300px;
+    background-color: #252424;
+    padding: 40px;
+    width: 400px;
     color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .menu-item:hover {
+    background-color: #333131;
     transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .menu-item-img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -453,23 +453,6 @@ body {
         max-width: 80%;
         height: auto;
     }
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .fa-facebook:hover {
-    background-color: #1877F2;
-    color: #fff;
-  }
-
-  .fa-instagram:hover {
-    background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-    color: #fff;
-  }
-
-  .fa-x-twitter:hover {
-    background-color: #000;
-    color: #fff;
-  }
 }
 
 /* Optional: on touch devices, you can set normal state (no hover) */
