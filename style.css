@@ -266,8 +266,7 @@ body {
     border: transparent;
 }
 
-
-
+/* ========== END OF ABOUT-US-CONTENT ========== */
 
 
 /* ========== RESPONSIVE (Mobile/Tablet) ========== */
@@ -417,11 +416,29 @@ body {
     }
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .fa-facebook:hover {
+    background-color: #1877F2;
+    color: #fff;
+  }
+
+  .fa-instagram:hover {
+    background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+    color: #fff;
+  }
+
+  .fa-x-twitter:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+/* Optional: on touch devices, you can set normal state (no hover) */
 @media (hover: none) and (pointer: coarse) {
   .fa-facebook,
   .fa-instagram,
   .fa-x-twitter {
-    background-color: transparent; 
-    color: inherit;
+    background-color: transparent; /* or your default */
+    color: inherit; /* keep original color */
   }
 }
