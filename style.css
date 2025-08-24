@@ -332,6 +332,48 @@ body {
 
 /* ========== END OF MENU-CONTENT ========== */
 
+/* ========== START OF CONTACT-US ========== */
+
+.footer {
+    background: #e08282;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+    height: auto;
+    width: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.footer-links .facebook {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-links .instagram {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-links .x-twitter {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-copyrights {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 /* ========== RESPONSIVE (Mobile/Tablet) ========== */
 @media (max-width: 900px) {
     .main-content {
@@ -365,6 +407,7 @@ body {
 
     .main-text .description {
         font-size: 16px;
+        gap: 10px;
     }
 
     .buttons-header {
@@ -518,4 +561,8 @@ body {
         justify-content: center;
         gap: 15px;
     }
+
+    /* ========== END OF MENU-CONTENT ========== */
+
+    /* ========== START OF MENU-CONTENT ========== */
 }
