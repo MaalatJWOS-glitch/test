@@ -263,7 +263,8 @@ body {
 /* ========== END OF ABOUT-US-CONTENT ========== */
 
 /* ========== MENU-CONTENT ========== */
-.menu {
+.menu-section
+ {
     background: #1b1b1b;
     padding: 80px 5%;
     gap: 60px;
@@ -334,8 +335,8 @@ body {
 
 /* ========== START OF CONTACT-US ========== */
 
-.footer {
-    background: #e08282;
+.footer-section {
+    background: #e28a24;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px 0;
