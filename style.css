@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Ensures padding/border don't affect width/height */
+    scroll-behavior: smooth;
 }
 
 /* ========== GLOBAL STYLES ========== */
