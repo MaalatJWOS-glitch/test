@@ -6,9 +6,13 @@
     scroll-behavior: smooth;
 }
 
-#main-content #about-us-section #menu-section #footer-section {
-    scroll-margin-top: auto; /* Adjust based on header height */
+#main-content,
+#about-us-section,
+#menu-section,
+#footer-section {
+  scroll-margin-top: 80px; /* your header height */
 }
+
 
 /* ========== GLOBAL STYLES ========== */
 body {
